@@ -5,14 +5,21 @@ This guide gets the Salamander Tech Hub website running locally.
 ## Requirements
 
 - Node.js 20 or newer
-- npm 10 or newer
+- pnpm 9 or newer
 - Git
+
+Enable pnpm with Corepack if it is not already installed:
+
+```bash
+corepack enable
+corepack prepare pnpm@12.4.1 --activate
+```
 
 Check your versions:
 
 ```bash
 node --version
-npm --version
+pnpm --version
 git --version
 ```
 
@@ -21,19 +28,19 @@ git --version
 Clone the repository and move into the project directory:
 
 ```bash
-git clone https://github.com/Salamander-Tech-Hub/<repository-name>.git
-cd Salamander
-npm install
+git clone https://github.com/Salamander-Tech-Hub/Wajenzi-hackv1.git
+cd Wajenzi-hackv1
+pnpm install
 ```
 
-Use the actual repository URL and directory name if they differ from the example above.
+Use the actual repository URL if it differs from the example above.
 
 ## Run locally
 
 Start the Vite development server:
 
 ```bash
-npm run dev
+pnpm dev
 ```
 
 Open the URL shown in the terminal. Vite supports hot module replacement, so changes under `src/` appear in the browser as you work.
@@ -43,16 +50,16 @@ Open the URL shown in the terminal. Vite supports hot module replacement, so cha
 Run both checks before opening a pull request:
 
 ```bash
-npm run lint
-npm run build
+pnpm lint
+pnpm build
 ```
 
-`npm run build` runs the TypeScript project build before creating the Vite output in `dist/`.
+`pnpm build` runs the TypeScript project build before creating the Vite output in `dist/`.
 
 To preview that production output:
 
 ```bash
-npm run preview
+pnpm preview
 ```
 
 ## Where to make changes
@@ -70,6 +77,6 @@ The current website does not require environment variables or third-party API ke
 
 ## Troubleshooting
 
-- If dependencies look stale, remove `node_modules` and run `npm install` again.
+- If dependencies look stale, remove `node_modules` and run `pnpm install` again.
 - If a route works through navigation but not after a direct refresh in production, check the host's single-page application fallback configuration.
 - If the first-visit loading screen does not appear, clear the browser's session storage for the site.

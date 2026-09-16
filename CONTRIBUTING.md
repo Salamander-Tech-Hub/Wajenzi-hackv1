@@ -21,8 +21,8 @@ git checkout -b feat/describe-your-change
 Install dependencies and start the site:
 
 ```bash
-npm install
-npm run dev
+pnpm install
+pnpm dev
 ```
 
 See [SETUP.md](SETUP.md) for the complete development setup and troubleshooting notes.
@@ -55,8 +55,8 @@ Pull requests should include:
 Before submitting, run:
 
 ```bash
-npm run lint
-npm run build
+pnpm lint
+pnpm build
 ```
 
 ## Review process

@@ -7,6 +7,10 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Other package managers (this repo uses pnpm)
+package-lock.json
+yarn.lock
+
 node_modules/
 dist
 dist-ssr
@@ -16,6 +20,7 @@ dist-ssr
 !.env.example
 
 # Editor directories and files
+.cursor/
 .vscode/*
 !.vscode/extensions.json
 .idea
