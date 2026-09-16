@@ -1,73 +1,27 @@
-# React + TypeScript + Vite
+# Salamander Tech Hub
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Salamander Tech Hub is a Open-Source technology community focused on open source, collaboration, and practical software development.
 
-Currently, two official plugins are available:
+Founded in August 2025, Salamander brings developers, designers, and technology enthusiasts together to learn, build, and share knowledge. We believe technology should be open, accessible, and created with the community.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Our work supports developers in Kenya and across Africa through open-source projects, community initiatives, events, and shared learning. The Salamander website introduces our mission, our team, our projects, and the ways people can connect or contribute.
 
-## React Compiler
+## Explore Salamander
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Visit the **Home** page to learn about our focus and initiatives.
+- Visit the **About** page to meet the team and learn our story.
+- Visit the **Contact** page to connect with us about events, partnerships, or collaboration.
+- Explore our projects on [GitHub](https://github.com/Salamander-Tech-Hub).
 
-## Expanding the ESLint configuration
+## Run the website locally
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+The site is built with React, TypeScript, Vite, Tailwind CSS, and React Router.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+For contribution and development information, see [SETUP.md](SETUP.md) and [CONTRIBUTING.md](CONTRIBUTING.md).
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+<p><span style="color: #FCD34D;"><strong>Happy coding!</strong></span></p>
