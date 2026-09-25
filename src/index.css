@@ -117,3 +117,16 @@ select {
 .spotlight-nav-shadow {
   box-shadow: 0 10px 32px rgba(0, 0, 0, 0.45);
 }
+
+@keyframes concept-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.concept-marquee {
+  animation: concept-marquee 32s linear infinite;
+}

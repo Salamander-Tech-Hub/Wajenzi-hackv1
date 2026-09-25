@@ -42,7 +42,7 @@ See [SETUP.md](SETUP.md) for the complete development setup and troubleshooting 
 Use a clear imperative commit message, such as:
 
 ```text
-Add accessible label to chat launcher
+Add accessible label to the join button
 ```
 
 Pull requests should include:

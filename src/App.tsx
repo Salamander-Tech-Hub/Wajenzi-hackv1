@@ -26,10 +26,10 @@ function App() {
     <>
       {isLoading && <LoadingScreen onLoadComplete={handleLoadComplete} />}
       <WaveGridBackground
-        className="pointer-events-none fixed inset-0 z-0 h-svh w-full"
-        colorBase="#0a0a0a"
+        className="pointer-events-none fixed inset-0 z-0 h-svh w-full opacity-70"
+        colorBase="#111111"
         colorHigh="#FFED00"
-        waveAmplitude={0.35}
+        waveAmplitude={0.32}
         autoAnimate
         vignette
       />

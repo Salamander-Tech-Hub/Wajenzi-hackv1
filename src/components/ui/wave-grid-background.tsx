@@ -461,7 +461,7 @@ export function WaveGridBackground({
     // ── Renderer + post-processing ─────────────────────────────────────────
     const renderer = new THREE.WebGLRenderer({ canvas, antialias: true });
     renderer.toneMapping = THREE.ACESFilmicToneMapping;
-    renderer.toneMappingExposure = 1.95;
+    renderer.toneMappingExposure = 1.6;
     renderer.shadowMap.enabled = true;
     renderer.shadowMap.type = THREE.PCFShadowMap;
     renderer.setClearColor("#808080");

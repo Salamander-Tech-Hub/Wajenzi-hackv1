@@ -1,31 +1,42 @@
 # Salamander Tech Hub
 
-Salamander Tech Hub is a Open-Source technology community focused on open source, collaboration, and practical software development.
+Salamander Tech Hub is an open-source community in Nairobi. We help developers, designers, and makers learn in public, contribute, and ship real software.
 
-Founded in August 2025, Salamander brings developers, designers, and technology enthusiasts together to learn, build, and share knowledge. We believe technology should be open, accessible, and created with the community.
+This repository is the community website: mission, team, events, and ways to get involved.
 
-Our work supports developers in Kenya and across Africa through open-source projects, community initiatives, events, and shared learning. The Salamander website introduces our mission, our team, our projects, and the ways people can connect or contribute.
+## Explore
 
-## Explore Salamander
+- **Home** — story, community impact, and how to join
+- **About** — mission, founders, and core team
+- **Contact** — events, partnerships, and collaboration
+- **GitHub** — [Salamander-Tech-Hub](https://github.com/Salamander-Tech-Hub)
 
-- Visit the **Home** page to learn about our focus and initiatives.
-- Visit the **About** page to meet the team and learn our story.
-- Visit the **Contact** page to connect with us about events, partnerships, or collaboration.
-- Explore our projects on [GitHub](https://github.com/Salamander-Tech-Hub).
-
-## Run the website locally
+## Run locally
 
 ```bash
 pnpm install
 pnpm dev
 ```
 
-The site is built with React, TypeScript, Vite, Tailwind CSS, and React Router.
+Requires Node.js 20+ and pnpm 9+. See [SETUP.md](SETUP.md) for full setup.
 
-For contribution and development information, see [SETUP.md](SETUP.md) and [CONTRIBUTING.md](CONTRIBUTING.md).
+## Project layout
+
+```text
+src/
+  pages/           Routes: home, About, Contact, loading screen
+  components/      Site chrome (nav, hero, story, community, footer)
+    ui/            Shared UI (wave grid, spotlight nav, buttons, cards)
+    originkit/     Isolated motion components (join CTA)
+  data/            Nav items and outbound links
+  assets/          Team photos, video, and brand images
+public/            Favicon, logos, and static images
+```
+
+The site is React, TypeScript, Vite, Tailwind CSS, and React Router. Theme is dark only (yellow on black).
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+[MIT](LICENSE). Contribution guide: [CONTRIBUTING.md](CONTRIBUTING.md).
 
 <p><span style="color: #FCD34D;"><strong>Happy coding!</strong></span></p>

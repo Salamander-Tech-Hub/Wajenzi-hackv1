@@ -64,12 +64,14 @@ pnpm preview
 
 ## Where to make changes
 
-- Add or update pages in `src/pages/`.
-- Add reusable interface pieces in `src/components/`.
-- Update chatbot responses in `src/data/chatKnowledge.ts`.
-- Update navigation labels and paths in `src/data/Menu.ts`.
-- Keep images, team photos, and other media in `src/assets/`.
-- Update the document title and metadata in `index.html`.
+- Routes live in `src/pages/` (`home.tsx`, `About.tsx`, `Contact.tsx`, `LoadingScreen.tsx`).
+- Shared chrome is in `src/components/` (navbar, hero, story, community, footer).
+- Visual primitives sit in `src/components/ui/` (wave grid, spotlight nav, cards, buttons).
+- WhatsApp and shop URLs are in `src/data/links.ts`.
+- Navigation labels are in `src/data/Menu.ts`.
+- Team photos and media stay in `src/assets/`.
+- Favicon and public logos are in `public/` (`favicon.png`, `logo1.png`).
+- Document title and favicon are set in `index.html`.
 
 ## Environment variables
 
