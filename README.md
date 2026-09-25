@@ -24,4 +24,8 @@ The site is built with React, TypeScript, Vite, Tailwind CSS, and React Router.
 
 For contribution and development information, see [SETUP.md](SETUP.md) and [CONTRIBUTING.md](CONTRIBUTING.md).
 
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
 <p><span style="color: #FCD34D;"><strong>Happy coding!</strong></span></p>

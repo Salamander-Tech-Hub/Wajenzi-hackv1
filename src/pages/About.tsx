@@ -1,5 +1,6 @@
 import React from 'react';
 import NavBar from '../components/Navbar';
+import Footer from '../components/Footer';
 import { SocialIcon } from 'react-social-icons';
 import ThemeCard from '../components/ThemeCard';
 import ThemeButton from '../components/ThemeButton';
@@ -62,7 +63,7 @@ const AboutPage: React.FC = () => {
   ];
 
   return (
-    <div className="flex flex-col min-h-screen bg-background-dark font-sans text-slate-200">
+    <div className="flex flex-col min-h-screen bg-transparent font-sans text-slate-200">
       <NavBar />
 
       <main className="flex-grow pt-20">
@@ -299,25 +300,7 @@ const AboutPage: React.FC = () => {
         </section>
       </main>
 
-      <footer className="bg-background-dark border-t border-slate-800">
-        <div className="container mx-auto px-6 py-12">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-8">
-            <div className="flex items-center gap-3">
-              <div className="w-8 h-8 bg-primary rounded flex items-center justify-center">
-                <span className="text-slate-900 text-sm font-bold">∞</span>
-              </div>
-              <span className="text-lg font-bold text-white">Salamander</span>
-            </div>
-            <div className="flex gap-8 text-sm text-slate-500">
-              <a className="hover:text-primary transition-colors" href="#">Privacy Policy</a>
-              <a className="hover:text-primary transition-colors" href="#">Terms of Service</a>
-              <a className="hover:text-primary transition-colors" href="#">Security</a>
-              <a className="hover:text-primary transition-colors" href="#">Status</a>
-            </div>
-            <p className="text-sm text-slate-600">© 2026 Salamander Tech Hub. Built with code.</p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };
